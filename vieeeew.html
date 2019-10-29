@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UniAcc Listing</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+	 <script>
+        window.onload = function () {
+        let cat = window.location.href;
+        console.log(cat);
+        if(cat == "http://35.247.185.195/add.html?success" || cat == "https://35.247.185.195/add.html?success"){
+           console.log("Cap");
+           document.getElementById("alertbox").style.display = "block";
+        } else{console.log("Else");}
+     };
+    </script>
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-image">
+                        <figure style="margin-bottom: 0 !important"><img src="images/map.jpg" alt="Map Icon" style="height: 200px !important"></figure>
+                        <h4 class="signup-image-link">Welcome to UniAcc Client</h4>
+                    </div>
+                    <div class="signup-image">
+                        <figure style="margin-bottom: 0 !important"><img src="images/dp.png" alt="DP" style="height: 100px !important"></figure>
+                        <h4 class="signup-image-link" style="margin-bottom: 0; font-size:24px">Dilhani Gamhatha</h4>
+                        <h4 class="signup-image-link" style="margin-top: 0">983260039V</h4>
+                    </div>
+                </div>
+                <div >
+                    <table style="width:100%">
+                        <tr>
+                          <td style="width: 5%"></td>
+                          <td><i class="zmdi zmdi-account material-icons-name"></i>  Name</td>
+                          <td style="width:65%"><input type="text" name="name" id="name" placeholder="Your Name" readonly /> </td>
+                          <td style="width: 5%"></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 5%"></td>
+                            <td><i class="zmdi zmdi-account material-icons-name"></i>  Email</td>
+                            <td style="width:65%"><input type="text" name="name" id="name" placeholder="Your Name" readonly /> </td>
+                            <td style="width: 5%"></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 5%"></td>
+                            <td><i class="zmdi zmdi-account material-icons-name"></i>  Listings</td>
+                            <td style="width:65%"><input type="text" name="name" id="name" placeholder="Your Name" readonly /> </td>
+                            <td style="width: 5%"></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 5%"></td>
+                            <td><i class="zmdi zmdi-account material-icons-name"></i>  Reviews</td>
+                            <td style="width:65%"><input type="text" name="name" id="name" placeholder="Your Name" readonly /> </td>
+                            <td style="width: 5%"></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 5%"></td>
+                            <td><i class="zmdi zmdi-account material-icons-name"></i>  Ratings</td>
+                            <td style="width:65%"><input type="text" name="name" id="name" placeholder="Your Name" readonly /> </td>
+                            <td style="width: 5%"></td>
+                        </tr>
+                      </table>
+
+                      <br>
+                      <br>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Add Listing</h2>
+
+
+ 			<div style="display: none" id="alertbox">
+                            <div class="container" style="background-color: green; width: 300px;">
+                                <h4 style="color: white;margin-left: 60px;">Successfully Added Data</h4>
+                            </div>
+                        </div>
+
+
+                        <form method="POST" class="register-form" id="register-form" action="database.php">
+                            <div class="form-group">
+                                <label for="plchldr"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="name" placeholder="Your Name" />
+                            </div>
+                            <div class="form-group">
+                                <label for="fsef"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="address" id="address" placeholder="Place Address" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="beds" id="beds" placeholder="How Many Beds?" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="rooms" id="rooms" placeholder="How Many Rooms?" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="keymoney" id="keymoney" placeholder="How much Keymoney?" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="maxpeople" id="maxpeople" placeholder="Maximum People" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="meals" id="meals" placeholder="Meals Provided? " />
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="payment" id="payment" placeholder="Payment Method" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="price" id="price" placeholder="Price" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="phone" id="phone" placeholder="Your Phone" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="tag" id="tag" placeholder="Place Area" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="utility" id="utility" placeholder="Utility Bills?" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="map" id="map" placeholder="Google Maps link" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="latlng" id="latlng" placeholder="Lat and Lng" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="id" id="id" placeholder="id" />
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all
+                                    statements in <a href="#" class="term-service">Terms of service</a></label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="ubmit" id="submit_button" class="form-submit"
+                                    value="Register" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="images/map.jpg" alt="Map Icon"></figure>
+                        <a href="#" class="signup-image-link">I am already member</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
