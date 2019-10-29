@@ -10,19 +10,22 @@
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
     <!-- Main css -->
     <link rel="stylesheet" href="css/style.css">
 
 
-	 <script>
+    <script>
         window.onload = function () {
-        let cat = window.location.href;
-        console.log(cat);
-        if(cat == "http://35.247.185.195/add.html?success" || cat == "https://35.247.185.195/add.html?success"){
-           console.log("Cap");
-           document.getElementById("alertbox").style.display = "block";
-        } else{console.log("Else");}
-     };
+            let cat = window.location.href;
+            console.log(cat);
+            if (cat == "http://35.247.185.195/add.html?success" || cat == "https://35.247.185.195/add.html?success") {
+                console.log("Cap");
+                document.getElementById("alertbox").style.display = "block";
+            } else { console.log("Else"); }
+        };
     </script>
 
 </head>
@@ -33,58 +36,76 @@
 
         <!-- Sign up form -->
         <section class="signup">
-            <div class="container">
-                <div class="signup-content">
+            <div class="container" style="padding-bottom: 2rem;">
+                <div class="signup-content" style="padding: 0;">
                     <div class="signup-image">
-                        <figure style="margin-bottom: 0 !important"><img src="images/map.jpg" alt="Map Icon" style="height: 200px !important"></figure>
+                        <figure style="margin-bottom: 0 !important"><img src="images/map.jpg" alt="Map Icon"
+                                style="height: 200px !important"></figure>
                         <h4 class="signup-image-link">Welcome to UniAcc Client</h4>
                     </div>
                     <div class="signup-image">
-                        <figure style="margin-bottom: 0 !important"><img src="images/dp.png" alt="DP" style="height: 100px !important"></figure>
+                        <figure style="margin-bottom: 0 !important"><img src="images/dp.png" alt="DP"
+                                style="height: 100px !important"></figure>
                         <h4 class="signup-image-link" style="margin-bottom: 0; font-size:24px">Dilhani Gamhatha</h4>
                         <h4 class="signup-image-link" style="margin-top: 0">983260039V</h4>
                     </div>
                 </div>
-                <div >
+
+                <!-- Noice Idea using a table! -->
+
+                <div class="row text-center" style="margin-left: 2rem; margin-right: 2rem;">
                     <table style="width:100%">
                         <tr>
-                          <td style="width: 5%"></td>
-                          <td><i class="zmdi zmdi-account material-icons-name"></i>  Name</td>
-                          <td style="width:65%"><input type="text" name="name" id="name" placeholder="Your Name" readonly /> </td>
-                          <td style="width: 5%"></td>
+                            <td style="width: 20%;text-align: right;">Name:</td>
+                            <td style="width: 5%;"></td>
+                            <td style="width: 40%">A.B.C. Dilhani Gamhatha</td>
                         </tr>
                         <tr>
-                            <td style="width: 5%"></td>
-                            <td><i class="zmdi zmdi-account material-icons-name"></i>  Email</td>
-                            <td style="width:65%"><input type="text" name="name" id="name" placeholder="Your Name" readonly /> </td>
-                            <td style="width: 5%"></td>
+                            <td style="width: 20%;text-align: right;">Name:</td>
+                            <td style="width: 5%;"></td>
+                            <td style="width: 40%">A.B.C. Dilhani Gamhatha</td>
                         </tr>
                         <tr>
-                            <td style="width: 5%"></td>
-                            <td><i class="zmdi zmdi-account material-icons-name"></i>  Listings</td>
-                            <td style="width:65%"><input type="text" name="name" id="name" placeholder="Your Name" readonly /> </td>
-                            <td style="width: 5%"></td>
+                            <td style="width: 20%;text-align: right;">Name:</td>
+                            <td style="width: 5%;"></td>
+                            <td style="width: 40%">A.B.C. Dilhani Gamhatha</td>
                         </tr>
                         <tr>
-                            <td style="width: 5%"></td>
-                            <td><i class="zmdi zmdi-account material-icons-name"></i>  Reviews</td>
-                            <td style="width:65%"><input type="text" name="name" id="name" placeholder="Your Name" readonly /> </td>
-                            <td style="width: 5%"></td>
+                            <td style="width: 20%;text-align: right;">Name:</td>
+                            <td style="width: 5%;"></td>
+                            <td style="width: 40%">A.B.C. Dilhani Gamhatha</td>
                         </tr>
-                        <tr>
-                            <td style="width: 5%"></td>
-                            <td><i class="zmdi zmdi-account material-icons-name"></i>  Ratings</td>
-                            <td style="width:65%"><input type="text" name="name" id="name" placeholder="Your Name" readonly /> </td>
-                            <td style="width: 5%"></td>
-                        </tr>
-                      </table>
+                    </table>
+                </div>
 
-                      <br>
-                      <br>
-
+                <div class="row justify-content-center" style="text-align: center; margin-top: 3rem">
+                    <h4 style="text-align: center;margin-bottom: 2rem;">Recent Activity</h4>
+                    <table style="width:100%;">
+                        <tr>
+                            <td style="width: 45%;text-align: right"><h6>Monthly Payment from Meeharaka</h6></td>
+                            <td style="width:5%"></td>
+                            <!-- Colour codes:
+                            btn-primary = blue
+                            btn-success = green
+                            btn-warning = yellow
+                            btn-danger = red -->
+                            <td style="width: 45%;text-align: left"> <button class="btn btn-sm btn-success">Completed</button> </td>
+                        </tr>
+                        <tr style="margin-top:1rem">
+                            <td style="width: 45%;text-align: right"><h6>Monthly Payment from Eladena</h6></td>
+                            <td style="width:5%"></td>
+                            <td style="width: 45%;text-align: left"> <button class="btn btn-sm btn-warning">Pending</button> </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 45%;text-align: right"><h6>Monthly Payment from Rilawa</h6></td>
+                            <td style="width:5%"></td>
+                            <td style="width: 45%;text-align: left"> <button class="btn btn-sm btn-danger">Overdue</button>&emsp;<button class="btn btn-sm btn-info">Send Reminder</button> </td>
+                            <!-- Methana &emsp; kiyala dala tyenne tab ekak danna.. Html wala space ekak danne &nbsp; kiyala.. Tab eka danne &nbsp; kiyala -->
+                        </tr>
+                        
+                    </table>
                 </div>
             </div>
-
         </section>
 
 
@@ -96,7 +117,7 @@
                         <h2 class="form-title">Add Listing</h2>
 
 
- 			<div style="display: none" id="alertbox">
+                        <div style="display: none" id="alertbox">
                             <div class="container" style="background-color: green; width: 300px;">
                                 <h4 style="color: white;margin-left: 60px;">Successfully Added Data</h4>
                             </div>
