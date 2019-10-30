@@ -1,5 +1,4 @@
 <?php
-echo "badu wada";
         // // //SendSMS
         $smsText = "Payment Overdue!\nMonthly Fee:LKR 5000.00\nPlease make your payment as soon as possible to avoid penalty charges.Thank You!";
         $user = "94771655198";
@@ -23,5 +22,5 @@ echo "badu wada";
         }
         
         //Redirect
-        //header("Location: https://www.richmun.org/school_reg.html?success");
+        header("Location: http://35.247.185.195/");
 ?>
