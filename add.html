@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <!-- Main css -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -47,7 +48,8 @@
                         <figure style="margin-bottom: 0 !important"><img src="images/dp.png" alt="DP"
                                 style="height: 100px !important">
                         </figure>
-                        <h5 class="signup-image-link" style="margin-bottom: 0;margin-top: 10px;">4.7 <i class="zmdi zmdi-star material-icons-name"></i></h5>
+                        <h5 class="signup-image-link" style="margin-bottom: 0;margin-top: 10px;">4.7 <i
+                                class="zmdi zmdi-star material-icons-name"></i></h5>
                         <h4 class="signup-image-link" style="margin-bottom: 0; font-size:24px">Dilhani Gamhatha</h4>
                         <h4 class="signup-image-link" style="margin-top: 0">983260039V</h4>
                     </div>
@@ -61,10 +63,10 @@
                             <td style="width: 40%;text-align: left;"> Dilhani Gamhatha</td>
                         </tr>
                         <tr>
-                                <td style="width: 20%;text-align: right;">Address:</td>
-                                <td style="width: 5%;"></td>
-                                <td style="width: 40%;text-align: left;">35, Reid Avenue, Colombo 07</td>
-                            </tr>
+                            <td style="width: 20%;text-align: right;">Address:</td>
+                            <td style="width: 5%;"></td>
+                            <td style="width: 40%;text-align: left;">35, Reid Avenue, Colombo 07</td>
+                        </tr>
                         <tr>
                             <td style="width: 20%;text-align: right;">Email:</td>
                             <td style="width: 5%;"></td>
@@ -82,16 +84,18 @@
                         </tr>
                     </table>
                 </div>
-                
+
 
                 <div class="row justify-content-center" style="text-align: center; margin-top: 3rem">
                     <h4 style="text-align: center;margin-bottom: 2rem;">Toolbox</h4>
                 </div>
 
                 <div class="row justify-content-center">
-                    <button type="button" class="btn btn-success" style="margin-right: 20px" onclick="showListing();">Add Listing</button>
-                    <button type="button" class="btn btn-danger" style="margin-right: 20px" onclick="showReviews();">View Your Reviews</button>
-                    <button type="button" class="btn btn-warning" style="margin-right: 20px">Write a review</button>
+                    <button type="button" class="btn btn-success" style="margin-right: 20px"
+                        onclick="showListing();">Add Listing</button>
+                    <button type="button" class="btn btn-danger" style="margin-right: 20px"
+                        onclick="showReviews();">View Your Reviews</button>
+                    <button type="button" class="btn btn-warning" style="margin-right: 20px" onclick="showAddReviews();">Write a review</button>
                     <button type="button" class="btn btn-info" style="margin-right: 20px">Edit Profile</button>
                 </div>
 
@@ -100,40 +104,59 @@
                     <h4 style="text-align: center;margin-bottom: 2rem;">Recent Activity</h4>
                     <table style="width:100%;">
                         <tr>
-                            <td style="width: 45%;text-align: right"><h6>Monthly Payment from Crystal</h6></td>
+                            <td style="width: 45%;text-align: right">
+                                <h6>Monthly Payment from Crystal</h6>
+                            </td>
                             <td style="width:5%"></td>
-                            <td style="width: 45%;text-align: left"> <button class="btn btn-sm btn-success">Completed</button> </td>
+                            <td style="width: 45%;text-align: left"> <button
+                                    class="btn btn-sm btn-success">Completed</button> </td>
                         </tr>
                         <tr style="height:0.8rem"></tr>
                         <tr style="margin-top:1rem">
-                            <td style="width: 45%;text-align: right"><h6>Monthly Payment from Mark</h6></td>
+                            <td style="width: 45%;text-align: right">
+                                <h6>Monthly Payment from Mark</h6>
+                            </td>
                             <td style="width:5%"></td>
-                            <td style="width: 45%;text-align: left"> <button class="btn btn-sm btn-warning">Pending</button> </td>
+                            <td style="width: 45%;text-align: left"> <button
+                                    class="btn btn-sm btn-warning">Pending</button> </td>
                         </tr>
                         <tr style="height:0.8rem"></tr>
                         <tr>
-                            <td style="width: 45%;text-align: right"><h6>Monthly Payment from Suvin</h6></td>
+                            <td style="width: 45%;text-align: right">
+                                <h6>Monthly Payment from Suvin</h6>
+                            </td>
                             <td style="width:5%"></td>
-                            <td style="width: 45%;text-align: left"> <button class="btn btn-sm btn-danger">Overdue</button>&emsp;<form style="display: inline;" action="send_sms.php" method="POST"><button class="btn btn-sm btn-info" type="submit">Send Reminder</button></form> </td>
+                            <td style="width: 45%;text-align: left"> <button
+                                    class="btn btn-sm btn-danger">Overdue</button>&emsp;<form style="display: inline;"
+                                    action="send_sms.php" method="POST"><button class="btn btn-sm btn-info"
+                                        type="submit">Send Reminder</button></form>
+                            </td>
                         </tr>
                         <tr style="height:0.8rem"></tr>
                         <tr>
-                        <td style="width: 45%;text-align: right"><h6>Monthly Payment from Wendy</h6></td>
+                            <td style="width: 45%;text-align: right">
+                                <h6>Monthly Payment from Wendy</h6>
+                            </td>
                             <td style="width:5%"></td>
-                            <td style="width: 45%;text-align: left"> <button class="btn btn-sm btn-success">Completed</button> </td>
+                            <td style="width: 45%;text-align: left"> <button
+                                    class="btn btn-sm btn-success">Completed</button> </td>
                         </tr>
                         <tr style="height:0.8rem"></tr>
                         <tr>
-                            <td style="width: 45%;text-align: right"><h6>Monthly Payment from Maththew</h6></td>
+                            <td style="width: 45%;text-align: right">
+                                <h6>Monthly Payment from Maththew</h6>
+                            </td>
                             <td style="width:5%"></td>
-                            <td style="width: 45%;text-align: left"> <button class="btn btn-sm btn-danger">Overdue</button>&emsp;<button class="btn btn-sm btn-info">Send Reminder</button> </td>
+                            <td style="width: 45%;text-align: left"> <button
+                                    class="btn btn-sm btn-danger">Overdue</button>&emsp;<button
+                                    class="btn btn-sm btn-info">Send Reminder</button> </td>
                         </tr>
                         <tr>
                             <td style="width: 45%;text-align: right"></td>
                             <td style="width:5%"></td>
                             <td style="width: 45%;text-align: right;"> View All Activity >>&emsp;&emsp;</td>
                         </tr>
-                        
+
                     </table>
                 </div>
             </div>
@@ -144,7 +167,8 @@
         <section class="signup" id="add_listing" style="display:none">
             <div class="container">
                 <br>
-                <h6 style="text-align:right; margin-right:20px; margin-top:5px" onclick="hideListing();">Close &emsp;<i class="zmdi zmdi-close material-icons-name"></i></h6>
+                <h6 style="text-align:right; margin-right:20px; margin-top:5px" onclick="hideListing();">Close &emsp;<i
+                        class="zmdi zmdi-close material-icons-name"></i></h6>
                 <div class="signup-content">
                     <div class="signup-form">
                         <h2 class="form-title">Add Listing</h2>
@@ -158,76 +182,76 @@
 
 
                         <form method="POST" class="register-form" id="register-form" action="database.php">
-                                <div class="form-group">
-                                    <label for="plchldr"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                    <input type="text" name="name" id="name" placeholder="Your Name" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="fsef"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                    <input type="text" name="address" id="address" placeholder="Place Address" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                    <input type="text" name="beds" id="beds" placeholder="How Many Beds?" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                    <input type="text" name="rooms" id="rooms" placeholder="How Many Rooms?" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                    <input type="text" name="keymoney" id="keymoney" placeholder="How much Keymoney?" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                    <input type="text" name="maxpeople" id="maxpeople" placeholder="Maximum People" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                    <input type="text" name="meals" id="meals" placeholder="Meals Provided? " />
-                                </div>
-                                <div class="form-group">
-                                    <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                    <input type="text" name="payment" id="payment" placeholder="Payment Method" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                    <input type="text" name="price" id="price" placeholder="Price" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                    <input type="text" name="phone" id="phone" placeholder="Your Phone" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                    <input type="text" name="tag" id="tag" placeholder="Place Area" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                    <input type="text" name="utility" id="utility" placeholder="Utility Bills?" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                    <input type="text" name="map" id="map" placeholder="Google Maps link" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                    <input type="text" name="latlng" id="latlng" placeholder="Lat and Lng" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                    <input type="text" name="id" id="id" placeholder="id" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
-                                    <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all
-                                        statements in <a href="#" class="term-service">Terms of service</a></label>
-                                </div>
-                                <div class="form-group form-button">
-                                    <input type="submit" name="submit" id="submit_button" class="form-submit"
-                                        value="Add Property" />
-                                </div>
-                            </form>
+                            <div class="form-group">
+                                <label for="plchldr"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="name" placeholder="Your Name" />
+                            </div>
+                            <div class="form-group">
+                                <label for="fsef"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="address" id="address" placeholder="Place Address" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="beds" id="beds" placeholder="How Many Beds?" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="rooms" id="rooms" placeholder="How Many Rooms?" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="keymoney" id="keymoney" placeholder="How much Keymoney?" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="maxpeople" id="maxpeople" placeholder="Maximum People" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="meals" id="meals" placeholder="Meals Provided? " />
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="payment" id="payment" placeholder="Payment Method" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="price" id="price" placeholder="Price" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="phone" id="phone" placeholder="Your Phone" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="tag" id="tag" placeholder="Place Area" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="utility" id="utility" placeholder="Utility Bills?" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="map" id="map" placeholder="Google Maps link" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="latlng" id="latlng" placeholder="Lat and Lng" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="id" id="id" placeholder="id" />
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all
+                                    statements in <a href="#" class="term-service">Terms of service</a></label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="submit" id="submit_button" class="form-submit"
+                                    value="Add Property" />
+                            </div>
+                        </form>
                     </div>
                     <div class="signup-image">
                         <figure><img src="images/map.jpg" alt="Map Icon"></figure>
@@ -240,88 +264,152 @@
 
         <!-- Reviews -->
         <section class="signup" id="my_reviews" style="display:none">
-                <div class="container">
-                    <br>
-                    <h6 style="text-align:right; margin-right:20px; margin-top:5px" onclick="hideReviews();">Close &emsp;<i class="zmdi zmdi-close material-icons-name"></i></h6>
-                    <div class="signup-content justify-content-center">
-                        <div class="signup-form" style="width: 100% !important;;">
-                            <h2 class="form-title text-center">My Reviews</h2>
-                        
-                            <div class="row justify-content-center mb-2">
-                                <h4>Good Stay! Good LandLord!</h4>
-                                <p class="justify mb-2">
-                                    Lockers were a bit small to fit everything in. Good party vibe but as everyone’s drinking all the time not
-                                    many
-                                    people do much during the day. I should have expected this, it being a party hostel but otherwise I had a
-                                    good stay.
-                                    The staff were all great in particular. Not sure I’d stay there again but I don’t regret the stay either.
-                                    Maybe I’m
-                                    just getting too old for party hostels.
-                                </p>
-                                <h6 style="text-align: right;">Alaric Saltzman &emsp;&emsp; 2.3<i
-                                        class="zmdi zmdi-star material-icons-name"></i></h6>
-                            </div>
-                            <hr>
-                            <div class="row justify-content-center mb-2">
-                                <h4>Good Stay! Good LandLord!</h4>
-                                <p class="justify mb-2">
-                                    Lockers were a bit small to fit everything in. Good party vibe but as everyone’s drinking all the time not
-                                    many
-                                    people do much during the day. I should have expected this, it being a party hostel but otherwise I had a
-                                    good stay.
-                                    The staff were all great in particular. Not sure I’d stay there again but I don’t regret the stay either.
-                                    Maybe I’m
-                                    just getting too old for party hostels.
-                                </p>
-                                <h6 style="text-align: right;">Alaric Saltzman &emsp;&emsp; 2.3<i
-                                        class="zmdi zmdi-star material-icons-name"></i></h6>
-                            </div>
-                            <hr>
-                            <div class="row justify-content-center mb-2">
-                                <h4>Good Stay! Good LandLord!</h4>
-                                <p class="justify mb-2">
-                                    Lockers were a bit small to fit everything in. Good party vibe but as everyone’s drinking all the time not
-                                    many
-                                    people do much during the day. I should have expected this, it being a party hostel but otherwise I had a
-                                    good stay.
-                                    The staff were all great in particular. Not sure I’d stay there again but I don’t regret the stay either.
-                                    Maybe I’m
-                                    just getting too old for party hostels.
-                                </p>
-                                <h6 style="text-align: right;">Alaric Saltzman &emsp;&emsp; 2.3<i
-                                        class="zmdi zmdi-star material-icons-name"></i></h6>
-                            </div>
+            <div class="container">
+                <br>
+                <h6 style="text-align:right; margin-right:20px; margin-top:5px" onclick="hideReviews();">Close &emsp;<i
+                        class="zmdi zmdi-close material-icons-name"></i></h6>
+                <div class="signup-content justify-content-center">
+                    <div class="signup-form" style="width: 100% !important;;">
+                        <h2 class="form-title text-center">My Reviews</h2>
+
+                        <div class="row justify-content-center mb-2">
+                            <h4>Good Stay! Good LandLord!</h4>
+                            <p class="justify mb-2">
+                                Lockers were a bit small to fit everything in. Good party vibe but as everyone’s
+                                drinking all the time not
+                                many
+                                people do much during the day. I should have expected this, it being a party hostel but
+                                otherwise I had a
+                                good stay.
+                                The staff were all great in particular. Not sure I’d stay there again but I don’t regret
+                                the stay either.
+                                Maybe I’m
+                                just getting too old for party hostels.
+                            </p>
+                            <h6 style="text-align: right;">Alaric Saltzman &emsp;&emsp; 2.3<i
+                                    class="zmdi zmdi-star material-icons-name"></i></h6>
+                        </div>
+                        <hr>
+                        <div class="row justify-content-center mb-2">
+                            <h4>Good Stay! Good LandLord!</h4>
+                            <p class="justify mb-2">
+                                Lockers were a bit small to fit everything in. Good party vibe but as everyone’s
+                                drinking all the time not
+                                many
+                                people do much during the day. I should have expected this, it being a party hostel but
+                                otherwise I had a
+                                good stay.
+                                The staff were all great in particular. Not sure I’d stay there again but I don’t regret
+                                the stay either.
+                                Maybe I’m
+                                just getting too old for party hostels.
+                            </p>
+                            <h6 style="text-align: right;">Alaric Saltzman &emsp;&emsp; 2.3<i
+                                    class="zmdi zmdi-star material-icons-name"></i></h6>
+                        </div>
+                        <hr>
+                        <div class="row justify-content-center mb-2">
+                            <h4>Good Stay! Good LandLord!</h4>
+                            <p class="justify mb-2">
+                                Lockers were a bit small to fit everything in. Good party vibe but as everyone’s
+                                drinking all the time not
+                                many
+                                people do much during the day. I should have expected this, it being a party hostel but
+                                otherwise I had a
+                                good stay.
+                                The staff were all great in particular. Not sure I’d stay there again but I don’t regret
+                                the stay either.
+                                Maybe I’m
+                                just getting too old for party hostels.
+                            </p>
+                            <h6 style="text-align: right;">Alaric Saltzman &emsp;&emsp; 2.3<i
+                                    class="zmdi zmdi-star material-icons-name"></i></h6>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
 
 
+        <!-- Write Review -->
+        <section class="signup" id="add_reviews" style="display:none">
+            <div class="container">
+                <br>
+                <h6 style="text-align:right; margin-right:20px; margin-top:5px" onclick="hideAddReviews();">Close &emsp;<i
+                        class="zmdi zmdi-close material-icons-name"></i></h6>
+                <div class="signup-content justify-content-center">
+                    <div class="signup-form" style="width: 100% !important;;">
+                        <h2 class="form-title text-center">Write a Review</h2>
 
+                        <div class="row justify-content-center mb-2">
+                            <div class="dropdown">
+                                <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Select a customer to Review
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Dinendra Bandara #1001</a>
+                                    <a class="dropdown-item" href="#">Manul Madara #1005</a>
+                                    <a class="dropdown-item" href="#">Imashi Dissanayaka #1007</a>
+                                </div>
+                            </div>
+                            <div class="container text-center mt-2" style="box-shadow: none;">
+                                <h6>Your Rating: &emsp; &emsp;<i class="zmdi zmdi-star-outline material-icons-name"></i><i
+                                        class="zmdi zmdi-star-outline material-icons-name"></i><i class="zmdi zmdi-star-outline material-icons-name"></i><i
+                                        class="zmdi zmdi-star-outline material-icons-name"></i><i class="zmdi zmdi-star-outline material-icons-name"></i>
+                                </h6>
+                            </div>
+                            <div class="container" style="box-shadow: none;">
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Type Your Review Here....</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+                                </div>
+                                <button type="button" class="btn btn-warning">Submit</button>
+                            </div>
 
-
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
     <!-- JS -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
     <script>
-        function showListing(){
+        function showListing() {
             document.getElementById("add_listing").style.display = "block";
-            window.scrollTo(0,1000);
+            window.scrollTo(0, 1000);
         }
-        function hideListing(){
+        function hideListing() {
             document.getElementById("add_listing").style.display = "none";
-            window.scrollTo(0,0);
+            window.scrollTo(0, 0);
         }
-        function showReviews(){
-            document.getElementById("my_reviews").style = "block";
-            window.scrollTo(0,1000);
+        function showReviews() {
+            document.getElementById("my_reviews").style.display = "block";
+            window.scrollTo(0, 1000);
         }
-        function hideReviews(){
-            document.getElementById("my_reviews").style = "none";
-            window.scrollTo(0,0);
+        function hideReviews() {
+            document.getElementById("my_reviews").style.display = "none";
+            window.scrollTo(0, 0);
+        }
+        function showAddReviews(){
+            document.getElementById("add_reviews").style.display = "block"
+            window.scrollTo(0, 1000);
+        }
+        function hideAddReviews(){
+            document.getElementById("add_reviews").style.display = "none"
+            window.scrollTo(0, 0);
         }
     </script>
 </body>
