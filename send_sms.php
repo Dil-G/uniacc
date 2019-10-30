@@ -22,5 +22,5 @@
         }
         
         //Redirect
-        header("Location: http://35.247.185.195/");
+        header("Location: http://35.247.185.195/add.html");
 ?>
